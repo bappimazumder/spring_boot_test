@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layouts/main">
+
+<head>
+<title>New Board</title>
+<link rel="stylesheet" href="css/carousel.css"
+	th:href="@{/css/carousel.css}" />
+</head>
+
+<body>
+	
+
+	<div layout:fragment="content">
+		<div class="container">
+		<br/><br/><br/>
+			<h1> Do you want to create '<span th:text="${boardName}"> School Board page</span>'?</h1>
+		</div>
+	</div>
+</body>
+</html>
